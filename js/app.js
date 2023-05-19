@@ -1,6 +1,7 @@
 let navbar = document.getElementById("navbar"),
   blend = document.querySelector(".gar"),
   menu = document.querySelector(".menu");
+let n;
 
 // navbar button
 menu.addEventListener("click", () => {
