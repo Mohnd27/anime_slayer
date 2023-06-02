@@ -1,0 +1,127 @@
+:root {
+  --main_color: rgb(8, 100, 219);
+}
+main {
+  position: relative;
+}
+.bk {
+  position: absolute;
+  height: 78vh;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(240, 2, 2), rgb(135, 132, 64, 0%) 76%),
+    url(/bk-img/asta-1.jpg);
+  background-size: cover;
+  z-index: -2;
+  object-fit: cover;
+  width: 100%;
+}
+
+.anime-ep {
+  margin-top: 3cm;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.ep-pic {
+  max-width: 270px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.anime-info {
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.anime-info h2 {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.anime-ep .anime-type {
+  display: flex;
+  gap: 10px;
+}
+.anime-ep .anime-type li {
+  text-align: center;
+  padding: 5px 13px;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #fff;
+}
+.anime-ep .stars {
+  display: flex;
+  gap: 10px;
+  color: gray;
+  font-size: 16px;
+}
+.anime-ep .stars .gold {
+  color: gold;
+}
+
+.out-of-ten {
+  letter-spacing: 1px;
+}
+.out-of-ten small {
+  color: gold;
+}
+.anime-info p {
+  line-height: 22px;
+}
+.ep {
+  background-color: #00081ad2;
+  margin-top: 7em;
+}
+.ep .ep-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, auto));
+  gap: 12px;
+  padding: 15px 5px;
+  color: #fff;
+}
+.ep-num {
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #4a4747;
+  border-radius: 4px;
+}
+.ep-num.active {
+  background-color: rgb(9, 180, 9);
+  color: #000;
+}
+@media (max-width: 1320px) {
+  .bk {
+    height: 90vh;
+  }
+}
+@media (max-width: 700px) {
+  .bk {
+    min-height: 132vh;
+  }
+  .anime-ep {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .anime-info {
+    justify-content: center;
+    align-items: center;
+  }
+  .ep-pic {
+    max-width: 200px;
+    width: 100%;
+  }
+  .anime-info {
+    max-width: 550px;
+    width: 100%;
+  }
+  .anime-info h2 {
+    font-size: 25px;
+    gap: 16px;
+  }
+}
