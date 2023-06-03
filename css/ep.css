@@ -12,6 +12,8 @@ main {
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(240, 2, 2), rgb(135, 132, 64, 0%) 76%),
     url(/bk-img/asta-1.jpg);
+  background: linear-gradient(0deg, rgba(240, 2, 2), rgb(135, 132, 64, 0%) 76%),
+    url(https://mohnd27.github.io/anime_slayer/anime_world/bk-img/asta-1.jpg);
   background-size: cover;
   z-index: -2;
   object-fit: cover;
